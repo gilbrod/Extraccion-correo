@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
+<html>   
+    <head>
     <title>EXTRACCION DE CORREO</title>
+    </head>
     <script>
 
 let text;
-//text="www.google.com.ve, 12345 qwerty zero67@gmail.com, <gokuo@yahoo.com >";
-text = prompt("Coloca los Datos");
+text="www.google.com.ve, 12345 qwerty zero67@gmail.com, <gokuo@yahoo.com >";
+//text = prompt("Coloca los Datos");
 let re = (/([a-zA-Z0-9._+-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi);
 text.match(re).forEach(function(email){
     alert(email)
 });
 
     </script>
+
+    <body>
+        <p style="border: 2px solid orangered"> Asignacion de <span style="color: green">Jonatahn</span>.</p>
+        <p> 1) Barra de texto que solo me extraiga los correos.</p>
+        <p> 2) Que me muestre el resultado de todos los correos.</p>
+        
+        <p > Texto: </p>
+        <input id="texto" type="text" name="TEXTO">
+        <P> comentario:</p>
+        <textarea name="comentario"></textarea>    
+        <div>HOLA</div>
+        <button onclick="text()">click</button>
+
+    </body>
 </html>
